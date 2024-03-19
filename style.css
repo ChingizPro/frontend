@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-size: 20px;
+}
+span, a, label {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 10px 25px;
+} 
+.tag {
+    color: green;
+    font-family: monospace;
+}
+.attr {
+    color: red;
+    font-family: monospace;
+}
+.section {
+    margin-bottom: 30px;
+}
+.line {
+    margin: 20px 0;
+    border: none;
+    height: 2px;
+    background-color: green;
+}
