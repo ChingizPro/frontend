@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
 }
 body {
     font-size: 20px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 span, a, label {
     display: inline-block;
@@ -17,13 +21,17 @@ img {
     margin: 20px auto;
     padding: 10px 25px;
 } 
+.tag, .attr {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 .tag {
     color: green;
-    font-family: monospace;
 }
 .attr {
     color: red;
-    font-family: monospace;
 }
 .section {
     margin-bottom: 30px;
