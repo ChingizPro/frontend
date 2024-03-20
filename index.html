@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="title">HTML tags and attributes</h1>
         <div class="section">
             <div><span class="tag">h1</span> - veb-sahifadagi asosiy sarlavha</div>
             <h1>h1 tegi orqali chiqarilgan matn</h1>
@@ -60,7 +61,52 @@
             <div><span class="attr">src</span> - rasm manbasi, manzili</div>
             <div><span class="attr">alt</span> - rasmni matn orqali ifodalovchi atribyut</div>
             <img width="300px" src="photo.jpg" alt="photo of a photo">
+        </div>
+        <hr class="line">
+        <div class="section">
+            <div><span class="tag">form</span> - foydalanuvchi tomonidan <span class="tag">input</span>, <span class="tag">textarea</span> va <span class="tag">select</span> kab teg lar orqali kiritilgan va tanlangan ma'lumotlarni serverga yuboruvchi teg</div>
+            <div><span class="attr">action</span> - server manzili</div>
+            <div><span class="tag">input</span> - ma'lumot kiritish, to'ldirish uchun maydon</div>
+            <div><span class="attr">name</span> - ma'lumot serverga borishi va qanday ma'lumot yuborilganligini bildirib turishi uchun</div>
+            <div><span class="attr">type</span> - input turi</div>
+            <div><span class="attr">placeholder</span> - input ichidagi yo'nalish beruvchi matn</div>
+            <form action="https://echo.htmlacademy.ru">
+                <input type="text" placeholder="ism-familiya" name="fullname">
+                <button>Submit button</button>
+            </form>
             <hr class="line">
+            <div><span class="tag">label</span> - ma'lumot beruvchi <span class="tag">input</span> ga bog'langan matn</div>
+            <div><span class="attr">for</span> - input ning <span class="attr">id</span> sini yozish va input ga ulash uchun</div>
+            <div><span class="attr">id</span> - takrorlanmas <span class="attr">class</span> ga o'xshash atribyut</div>
+            <form action="https://echo.htmlacademy.ru">
+                <label for="nameinput">Ism va familiya:</label>
+                <input id="nameinput" type="text" placeholder="ism-familiya" name="fullname">
+                <button>Submit button</button>
+            </form>
+            <hr class="line">
+            <div><span class="attr">type</span> - input turi</div>
+            <div><span class="attrval">text</span> - matn uchun</div>
+            <input type="text" name="textinput" placeholder="ism-familiya">
+            <div><span class="attrval">password</span> - parol uchun</div>
+            <input type="password" name="passwordinput" placeholder="********">
+            <div><span class="attrval">tel</span> - telefon raqam uchun</div>
+            <input type="tel" name="telinput" placeholder="+998 20 002 00 02">
+            <div><span class="attrval">date</span> - sana uchun</div>
+            <input type="date" name="dateinput">
+            <div><span class="attrval">email</span> - email uchun</div>
+            <input type="email" name="emailinput" placeholder="email">
+            <div><span class="attrval">number</span> - raqamlar uchun</div>
+            <input type="number" name="numberinput" placeholder="36">
+            <hr class="line">
+            <div><span class="tag">select</span> - umumiy <span class="tag">option</span> lar guruhi</div>
+            <div><span class="tag">option</span> - tanlash uchun variant</div>
+            <div><span class="attr">value</span> - takrorlanmas serverga yuboriluvchi qiymat</div>
+            <label for="lang">Tilni tanlang:</label>
+            <select name="lang" id="lang">
+                <option value="uz">Uzbek</option>
+                <option value="ru">Russian</option>
+                <option value="en">English</option>
+            </select>
         </div>
     </div>
     <script src="main.js"></script>
