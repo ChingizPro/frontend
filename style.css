@@ -84,7 +84,7 @@ input, button, textarea, select {
 .attrval {
     color: mediumslateblue;
 }
-.section {
+.section:not(:last-of-type) {
     margin-bottom: 30px;
 }
 .line {
@@ -141,6 +141,18 @@ input, button, textarea, select {
         padding: 10px 30px;
     }
 }
+@media(max-width:1000px){
+    .title {
+        font-size: 42px;
+        line-height: 1;
+    }
+    body {
+        font-size: 18px;
+    }
+    .line {
+        margin: 15px 0;
+    }
+}
 @media(max-width:650px){
     .list {
         width: 100%;
@@ -150,9 +162,21 @@ input, button, textarea, select {
         justify-content: center;
         column-gap: 10px;
     }
+    .link {
+        padding: 7px 20px;
+    }
+    .link {
+        text-align: right;
+    }
+    .btn {
+        display: inline-block;
+    }
     .listopen {
         display: flex;
         animation: openlist 0.3s linear forwards;
+    }
+    .listclose {
+        animation: listclose 0.3s linear forwards;
     }
     @keyframes openlist {
         0% {
@@ -162,9 +186,6 @@ input, button, textarea, select {
             max-height: 55px;
         }
     }
-    .listclose {
-        animation: listclose 0.3s linear forwards;
-    }
     @keyframes listclose {
         0% {
             max-height: 55px;
@@ -173,14 +194,21 @@ input, button, textarea, select {
             max-height: 0;
         }
     }
-    .btn {
-        display: inline-block;
+}
+@media(max-width:600px){
+    h1, h2, h6 {
+        line-height: 1;
     }
-    .link {
-        padding: 7px 20px;
+    body {
+        font-size: 16px;
     }
-    .link {
-        text-align: right;
+    .container {
+        margin: 0 auto;
+        padding: 10px 15px;
+    }
+    .title {
+        font-size: 36px;
+        margin-bottom: 18px;
     }
 }
 @media(max-width:500px){
@@ -194,6 +222,9 @@ input, button, textarea, select {
     .btn {
         width: 29px;
         height: 24px;
+    }
+    body {
+        margin-top: 90px;
     }
 }
 @media(max-width:400px){
