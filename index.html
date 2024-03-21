@@ -15,7 +15,7 @@
         </a>
         <ul class="list">
             <li class="item">
-                <a href="#" class="link">HTML</a>
+                <a href="index.html" class="link">HTML</a>
             </li>
             <li class="item">
                 <a href="#" class="link">CSS</a>
@@ -125,6 +125,46 @@
                 <option value="ru">Russian</option>
                 <option value="en">English</option>
             </select>
+        </div>
+        <hr class="line">
+        <div class="section">
+            <div><span class="tag">table</span> - jadval</div>
+            <div><span class="attr">border</span> - jadval va kataklar uchun ramka</div>
+            <div><span class="tag">tr</span> - jadval qatori</div>
+            <div><span class="tag">th</span> - sarlavha uchun jadval katagi</div>
+            <div><span class="tag">td</span> - oddiy jadval katagi</div>
+            <table border="4">
+                <tr>
+                    <th>th1</th>
+                    <th>th2</th>
+                    <th>th3</th>
+                </tr>
+                <tr>
+                    <td>td1</td>
+                    <td>td2</td>
+                    <td>td3</td>
+                </tr>
+            </table>
+            <hr class="line">
+            <div><span class="attr">colspan</span> - yonma-yon jadval kataklarini bir-biriga qo'shadi</div>
+            <div><span class="attr">rowspan</span> - ustma-ust jadval kataklarini bir-biriga qo'shadi</div>
+            <table border="1">
+                <tr>
+                    <th>Katak</th>
+                    <th colspan="3">Katak</th>
+                    <th rowspan="3">Katak</th>
+                </tr>
+                <tr>
+                    <td>Katak</td>
+                    <td>Katak</td>
+                    <td rowspan="2">Katak</td>
+                    <td>Katak</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Katak</td>
+                    <td>Katak</td>
+                </tr>
+            </table>
         </div>
     </div>
     <script src="main.js"></script>
