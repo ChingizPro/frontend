@@ -68,7 +68,7 @@ input, button, textarea, select {
     text-align: center;
     margin-bottom: 21px;
 }
-.tag, .attr, .attrval {
+.tag, .attr, .attrval, .prop {
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -83,6 +83,9 @@ input, button, textarea, select {
 }
 .attrval {
     color: mediumslateblue;
+}
+.prop {
+    color: mediumvioletred;
 }
 .section:not(:last-of-type) {
     margin-bottom: 30px;
@@ -134,7 +137,16 @@ input, button, textarea, select {
     transform: 0 50%;
     rotate: -45deg;
 }
-
+.textcolor {
+    color: dodgerblue;
+}
+.bgcolor {
+    background-color: teal;
+    color: white;
+}
+.fs {
+    font-size: 30px;
+}
 /* responsive design */
 @media(max-width:1250px){
     .nav {
