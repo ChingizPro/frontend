@@ -147,6 +147,21 @@ input, button, textarea, select {
 .fs {
     font-size: 30px;
 }
+.border {
+    border: 3px solid dodgerblue;
+}
+.padding {
+    padding: 17px;
+}
+.margin {
+    margin: 20px;
+}
+.border-radius {
+    border-radius: 15px;
+}
+.bg {
+    background-color: aqua;
+}
 /* responsive design */
 @media(max-width:1250px){
     .nav {
