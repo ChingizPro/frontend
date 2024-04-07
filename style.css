@@ -19,6 +19,7 @@ span, a, label {
 img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 input, button, textarea, select {
     font-size: 18px;
@@ -162,6 +163,46 @@ input, button, textarea, select {
 .bg {
     background-color: aqua;
 }
+/* footer */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 100px;
+    text-align: center;
+}
+.footer__div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.footer__link {
+    text-decoration-style: dotted;
+    color: silver;
+    transition: 0.2s all linear;
+}
+.footer__link:hover {
+    text-decoration-style: solid;
+    color: lime;
+}
+.footer__social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 15px;
+}
+.footer__telegramlink {
+    text-decoration: none;
+    color: silver;
+}
+.footer__telegramlink > span {
+    color: #2196d4;
+}
+.footer__telegram {
+    width: 27px;
+}
 /* responsive design */
 @media(max-width:1250px){
     .nav {
@@ -237,6 +278,9 @@ input, button, textarea, select {
         font-size: 36px;
         margin-bottom: 18px;
     }
+    .footer__telegram {
+        width: 24px;
+    }
 }
 @media(max-width:500px){
     .nav {
@@ -253,6 +297,9 @@ input, button, textarea, select {
     body {
         margin-top: 90px;
     }
+    .footer {
+        padding: 30px 20px;
+    }
 }
 @media(max-width:400px){
     .list {
@@ -261,5 +308,10 @@ input, button, textarea, select {
     }
     .link {
         padding: 7px 10px;
+    }
+}
+@media(max-width:320px){
+    .footer {
+        padding: 20px 10px;
     }
 }
