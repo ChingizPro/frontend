@@ -84,6 +84,7 @@ input, button, textarea, select {
     padding: 7px;
     margin: 7px 0;
     background-color: black;
+    overflow: auto;
 }
 .code > * {
     font-weight: normal;
