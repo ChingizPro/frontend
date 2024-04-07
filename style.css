@@ -69,7 +69,7 @@ input, button, textarea, select {
     text-align: center;
     margin-bottom: 21px;
 }
-.tag, .attr, .attrval, .prop {
+.tag, .attr, .attrval, .prop, .val, .code {
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -79,6 +79,21 @@ input, button, textarea, select {
     color: green;
     text-shadow: 1px 0 black;
 }
+.code {
+    color: lime;
+    padding: 7px;
+    margin: 7px 0;
+    background-color: black;
+}
+.code > * {
+    font-weight: normal;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
 .attr {
     color: red;
 }
@@ -87,6 +102,9 @@ input, button, textarea, select {
 }
 .prop {
     color: mediumvioletred;
+}
+.val {
+    color: royalblue;
 }
 .section:not(:last-of-type) {
     margin-bottom: 30px;
@@ -162,6 +180,12 @@ input, button, textarea, select {
 }
 .bg {
     background-color: aqua;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
 }
 /* footer */
 .footer {

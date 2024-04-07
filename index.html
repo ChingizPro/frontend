@@ -34,22 +34,50 @@
         <h1 class="title">HTML tags and attributes</h1>
         <div class="section">
             <div><span class="tag">h1</span> - veb-sahifadagi asosiy sarlavha</div>
+            <div class="code">
+                &lt;h1&gth1 tegi orqali chiqarilgan matn&lt/h1&gt
+            </div>
             <h1>h1 tegi orqali chiqarilgan matn</h1>
             <hr class="line">
             <div><span class="tag">h2</span> - ikkinchi darajali sarlavha</div>
+            <div class="code">
+                &lt;h2&gth2 tegi orqali chiqarilgan matn&lt/h2&gt
+            </div>
             <h2>h2 tegi orqali chiqarilgan matn</h2>
             <hr class="line">
             <div><span class="tag">h6</span> - oltinchi darajali sarlavha</div>
+            <div class="code">
+                &lt;h6&gth6 tegi orqali chiqarilgan matn&lt/h6&gt
+            </div>
             <h6>h6 tegi orqali chiqarilgan matn</h6>
         </div>
         <hr class="line">
         <div class="section">
             <div><span class="tag">p</span> - oddiy matn uchun</div>
+            <div class="code">
+                <div>&lt;p&gtp tegi orqali chiqarilgan matn 1&lt/p&gt</div>
+                <div>&lt;p&gtp tegi orqali chiqarilgan matn 2&lt/p&gt</div>
+            </div>
             <p>p tegi orqali chiqarilgan matn 1</p>
             <p>p tegi orqali chiqarilgan matn 2</p>
             <hr class="line">
             <div><span class="tag">ul</span> - tartibsiz ro'yxat</div>
             <div><span class="tag">li</span> - ro'yxat elementi</div>
+            <div class="code">
+<pre>
+&lt;ul class="list">
+    &lt;li class="item">
+        &lt;a href="index.html" class="link">HTML&lt;/a>
+    &lt;/li>
+    &lt;li class="item">
+        &lt;a href="#" class="link">CSS&lt;/a>
+    &lt;/li>
+    &lt;li class="item">
+        &lt;a href="jspage.html" class="link">JavaScript&lt;/a>
+    &lt;/li>
+&lt;/ul>
+</pre>
+            </div>
             <ul>
                 <li>item</li>
                 <li>item</li>
@@ -57,6 +85,21 @@
             <hr class="line">
             <div><span class="tag">ol</span> - tartibli ro'yxat</div>
             <div><span class="tag">li</span> - ro'yxat elementi</div>
+            <div class="code">
+<pre>
+&lt;ol class="list">
+    &lt;li class="item">
+        &lt;a href="index.html" class="link">HTML&lt;/a>
+    &lt;/li>
+    &lt;li class="item">
+        &lt;a href="#" class="link">CSS&lt;/a>
+    &lt;/li>
+    &lt;li class="item">
+        &lt;a href="jspage.html" class="link">JavaScript&lt;/a>
+    &lt;/li>
+&lt;/ol>
+</pre>
+            </div>
             <ol>
                 <li>item</li>
                 <li>item</li>
@@ -67,22 +110,40 @@
         <hr class="line">
         <div class="section">
             <div><span class="tag">button</span> - tugma, knopka</div>
+            <div class="code">
+                &lt;button>Button 1&lt;/button>
+                <br>
+                &lt;button>Button 2&lt;/button>
+            </div>
             <button>Button 1</button>
             <button>Button 2</button>
             <hr class="line">
             <div><span class="tag">a</span> - link, havola</div>
             <div><span class="attr">href</span> - havola manzili</div>
             <div><span class="attr">target</span> - havola manzilini qaysi oynada ochishni belgilovchi atribyut</div>
+            <div class="code">
+                &lt;a href="https://youtube.com" target="_blank">youtube&lt;/a>
+                <br>
+                &lt;a href="https://kun.uz" target="_blank">yangliklar&lt;/a>
+            </div>
             <a href="https://youtube.com" target="_blank">youtube</a>
             <a href="https://kun.uz" target="_blank">yangliklar</a>
             <hr class="line">
             <div><span class="tag">span</span> - oddiy yozuv uchun</div>
+            <div class="code">
+                &lt;span>span1&lt;/span>
+                <br>
+                &lt;span>span2&lt;/span>
+            </div>
             <span>span1</span>
             <span>span2</span>
             <hr class="line">
             <div><span class="tag">img</span> - rasmlar uchun</div>
             <div><span class="attr">src</span> - rasm manbasi, manzili</div>
             <div><span class="attr">alt</span> - rasmni matn orqali ifodalovchi atribyut</div>
+            <div class="code">
+                &lt;img width="300px" src="img/photo.jpg" alt="photo of a photo"&gt;
+            </div>
             <img width="300px" src="img/photo.jpg" alt="photo of a photo">
         </div>
         <hr class="line">
@@ -93,6 +154,14 @@
             <div><span class="attr">name</span> - ma'lumot serverga borishi va qanday ma'lumot yuborilganligini bildirib turishi uchun</div>
             <div><span class="attr">type</span> - input turi</div>
             <div><span class="attr">placeholder</span> - input ichidagi yo'nalish beruvchi matn</div>
+            <div class="code">
+<pre>
+&ltform action="https://echo.htmlacademy.ru">
+    &ltinput type="text" placeholder="ism-familiya" name="fullname">
+    &ltbutton>Submit button&lt/button>
+&lt/form>
+</pre>
+            </div>
             <form action="https://echo.htmlacademy.ru">
                 <input type="text" placeholder="ism-familiya" name="fullname">
                 <button>Submit button</button>
@@ -101,6 +170,15 @@
             <div><span class="tag">label</span> - ma'lumot beruvchi <span class="tag">input</span> ga bog'langan matn</div>
             <div><span class="attr">for</span> - input ning <span class="attr">id</span> sini yozish va input ga ulash uchun</div>
             <div><span class="attr">id</span> - takrorlanmas <span class="attr">class</span> ga o'xshash atribyut</div>
+            <div class="code">
+<pre>
+&lt;form action="https://echo.htmlacademy.ru">
+    &lt;label for="nameinput">Ism va familiya:&lt;/label>
+    &lt;input id="nameinput" type="text" placeholder="ism-familiya" name="fullname">
+    &lt;button>Submit button&lt;/button>
+&lt;/form>
+</pre>
+            </div>
             <form action="https://echo.htmlacademy.ru">
                 <label for="nameinput">Ism va familiya:</label>
                 <input id="nameinput" type="text" placeholder="ism-familiya" name="fullname">
@@ -109,21 +187,49 @@
             <hr class="line">
             <div><span class="attr">type</span> - input turi</div>
             <div><span class="attrval">text</span> - matn uchun</div>
+            <div class="code">
+                &lt;input type="text" name="textinput" placeholder="ism-familiya"&gt;
+            </div>
             <input type="text" name="textinput" placeholder="ism-familiya">
             <div><span class="attrval">password</span> - parol uchun</div>
+            <div class="code">
+                &lt;input type="password" name="passwordinput" placeholder="********"&gt;
+            </div>
             <input type="password" name="passwordinput" placeholder="********">
             <div><span class="attrval">tel</span> - telefon raqam uchun</div>
+            <div class="code">
+                &lt;input type="tel" name="telinput" placeholder="+998 20 002 00 02"&gt; 
+            </div>
             <input type="tel" name="telinput" placeholder="+998 20 002 00 02">
             <div><span class="attrval">date</span> - sana uchun</div>
+            <div class="code">
+                &lt;input type="date" name="dateinput"&gt;
+            </div>
             <input type="date" name="dateinput">
             <div><span class="attrval">email</span> - email uchun</div>
+            <div class="code">
+                &lt;input type="email" name="emailinput" placeholder="email">&gt;
+            </div>
             <input type="email" name="emailinput" placeholder="email">
             <div><span class="attrval">number</span> - raqamlar uchun</div>
+            <div class="code">
+                &lt;input type="number" name="numberinput" placeholder="36"&gt; 
+            </div>
             <input type="number" name="numberinput" placeholder="36">
             <hr class="line">
             <div><span class="tag">select</span> - umumiy <span class="tag">option</span> lar guruhi</div>
             <div><span class="tag">option</span> - tanlash uchun variant</div>
             <div><span class="attr">value</span> - takrorlanmas serverga yuboriluvchi qiymat</div>
+            <div class="code">
+<pre>
+&lt;label for="lang">Tilni tanlang:&lt;/label>
+&lt;select name="lang" id="lang">
+    &lt;option value="uz">Uzbek&lt;/option>
+    &lt;option value="ru">Russian&lt;/option>
+    &lt;option value="en">English&lt;/option>
+&lt;/select>
+</pre>
+            </div>
             <label for="lang">Tilni tanlang:</label>
             <select name="lang" id="lang">
                 <option value="uz">Uzbek</option>
@@ -138,6 +244,22 @@
             <div><span class="tag">tr</span> - jadval qatori</div>
             <div><span class="tag">th</span> - sarlavha uchun jadval katagi</div>
             <div><span class="tag">td</span> - oddiy jadval katagi</div>
+<div class="code">
+<pre>
+&lt;table border="4">
+    &lt;tr>
+        &lt;th>th1&lt;/th>
+        &lt;th>th2&lt;/th>
+        &lt;th>th3&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>td1&lt;/td>
+        &lt;td>td2&lt;/td>
+        &lt;td>td3&lt;/td>
+    &lt;/tr>
+&lt;/table>
+</pre>
+</div>
             <table border="4">
                 <tr>
                     <th>th1</th>
@@ -153,6 +275,27 @@
             <hr class="line">
             <div><span class="attr">colspan</span> - yonma-yon jadval kataklarini bir-biriga qo'shadi</div>
             <div><span class="attr">rowspan</span> - ustma-ust jadval kataklarini bir-biriga qo'shadi</div>
+<div class="code">
+<pre>
+&lt;table border="1">
+    &lt;tr>
+        &lt;th>Katak&lt;/th>
+        &lt;th colspan="3">Katak&lt;/th>
+        &lt;th rowspan="3">Katak&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Katak&lt;/td>
+        &lt;td>Katak&lt;/td>
+        &lt;td rowspan="2">Katak&lt;/td>
+        &lt;td>Katak&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td colspan="2">Katak&lt;/td>
+        &lt;td>Katak&lt;/td>
+    &lt;/tr>
+&lt;/table>
+</pre>
+</div>
             <table border="1">
                 <tr>
                     <th>Katak</th>
