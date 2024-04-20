@@ -37,6 +37,7 @@ input, button, textarea, select {
     top: 0;
     width: 100%;
     max-width: 1700px;
+    z-index: 100;
 }
 .logo, .link {
     text-decoration: none;
@@ -201,6 +202,82 @@ input, button, textarea, select {
 .spacing {
     word-spacing: 30px;
     letter-spacing: 10px;
+}
+.text-center {
+    background-color: magenta;
+    text-align: center;
+    padding: 10px;
+}
+.text-right {
+    background-color: skyblue;
+    text-align: right;
+    padding: 10px;
+}
+.text-justify {
+    padding: 5px;
+    text-align: justify;
+    background-color: lime;
+}
+.mb {
+    margin-bottom: 20px;
+}
+.square {
+    width: 130px;
+    height: 130px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.rotate {
+    rotate: 20deg;
+}
+.translate {
+    translate: 50px -30px;
+}
+.scale {
+    scale: 0.7;
+}
+.element {
+    width: 130px;
+    height: 130px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    transition: 0.2s all linear;
+}
+.element:hover {
+    scale: 1.1;
+    rotate: -100deg;
+    translate: 70px 20px;
+    background-color: teal;
+    color: white;
+}
+.bradnotran {
+    transition: none;
+}
+.bradtran {
+    transition: 0.2s all linear;
+}
+.changebrad:hover {
+    background-color: blue;
+    border-radius: 50%;
+}
+.text-shadow {
+    font-size: 27px;
+    text-shadow: 2px 3px 1px red, -4px -3px 2px green;
+}
+.box-shadow {
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0 0 15px 3px black, 10px 12px blue, -7px -5px 8px red;
 }
 /* footer */
 .footer {

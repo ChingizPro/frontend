@@ -72,8 +72,14 @@
             <div class="border-radius bg padding">Lorem ipsum dolor sit amet consectetur.</div>
             <hr class="line">
             <div>
-                <span class="prop">text-align</span>: <span class="val">center/left/right</span> - 
+                <span class="prop">text-align</span>: <span class="val">center/left/right/justify</span> - matnlar va kichik elementlarning gorizontal joylashuvini o'zgartiradi
             </div>
+            <div class="code">text-align: center;</div>
+            <div class="text-center">Lorem ipsum dolor sit.</div>
+            <div class="code">text-align: right;</div>
+            <div class="text-right">Lorem ipsum dolor sit.</div>
+            <div class="code">text-align: justify;</div>
+            <div class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit veritatis consequatur quod, beatae rem voluptas culpa aut consectetur, provident eos modi quis consequuntur iste quo perspiciatis delectus molestias tempore aliquam ab adipisci praesentium minus quam. Suscipit est optio ut iure enim unde inventore odio ducimus, maiores porro deleniti quod odit sequi, dolores aperiam harum in doloribus similique eius quis commodi.</div>
             <hr class="line">
             <div><span class="prop">font-weight</span>: <span class="val">bold/normal</span> - yozuv qalinligini o'zgartiradi</div>
             <div class="row">
@@ -107,6 +113,95 @@
                 letter-spacing: 10px;
             </div>
             <div class="spacing">Lorem ipsum dolor sit amet consectetur.</div>
+            <hr class="line">
+            <div>
+                <span class="prop">text-shadow</span>: <span class="val">#px #px #px color</span> - matnga soya chiqaradi
+                <div class="row">
+                    <span class="code">
+<pre>
+text-shadow: 2px 3px 1px red, 
+    -4px -3px 2px green;
+</pre>
+                    </span> - 
+                    <span class="text-shadow">Lorem ipsum dolor</span>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="mb">
+                <span class="prop">box-shadow</span>: <span class="val">#px #px #px #px color</span> - elementga soya chiqaradi
+                <div class="row">
+                    <span class="code">
+<pre>
+    box-shadow: 0 0 15px 3px black, 
+        10px 12px blue, 
+        -7px -5px 8px red;
+</pre>
+                    </span> - 
+                    <span class="box-shadow">Lorem ipsum dolor</span>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="mb">
+                <span class="prop">rotate</span>: <span class="val">[0:360]#deg</span> - elementni aylantiradi
+            </div>
+            <div class="row">
+                <span class="code">rotate: 20deg;</span> - 
+                <span class="square rotate">element</span>
+            </div>
+            <hr class="line">
+            <div class="mb">
+                <span class="prop">translate</span>: <span class="val">#px</span> - elementni siljitadi
+            </div>
+            <div class="row">
+                <span class="code">translate: 50px -30px;</span> - 
+                <span class="square translate">element</span>
+            </div>
+            <hr class="line">
+            <div class="mb">
+                <span class="prop">scale</span>: <span class="val">#</span> - element hajmini o'zgartiradi
+            </div>
+            <div class="row">
+                <span class="code">scale: 0.7;</span> - 
+                <span class="square scale">element</span>
+            </div>
+            <hr class="line">
+            <div>
+                .element<span class="prop">:hover{}</span> - sichqoncha element ustiga borganda elementning dizaynini o'zgartiradi
+            </div>
+            <div class="code">
+<pre>
+.element {
+    width: 130px;
+    height: 130px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    transition: 0.2s all linear;
+}
+.element:hover {
+    scale: 1.1;
+    rotate: -100deg;
+    translate: 70px 20px;
+    background-color: teal;
+    color: white;
+}
+</pre>
+            </div>
+            <div class="square element">square</div>
+            <hr class="line">
+            <div>
+                <span class="prop">transition</span>: <span class="val">all #s linear</span> - element bir holatdan boshqa holatga o'tish vaqtini belgilaydi, effekt vaqtini uzaytiradi yoki qisqartiradi
+            </div>
+            <div class="row">
+                transition ishlatilmasa -> <div class="square changebrad bradnotran">test</div>
+            </div>
+            <div class="row">
+                <span class="code">transition: 0.2s all linear;</span> -> <div class="square changebrad bradtran">test</div>
+            </div>
         </div>
     </div>
     <!-- footer -->
