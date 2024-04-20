@@ -149,12 +149,12 @@ input, button, textarea, select {
 }
 .btnclose .dash1 {
     top: 50%;
-    transform: 0 -50%;
+    translate: 0 -50%;
     rotate: 45deg;
 }
 .btnclose .dash3 {
     bottom: 50%;
-    transform: 0 50%;
+    translate: 0 50%;
     rotate: -45deg;
 }
 .textcolor {
