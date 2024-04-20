@@ -194,6 +194,14 @@ input, button, textarea, select {
     align-items: center;
     column-gap: 12px;
 }
+.lh {
+    line-height: 3;
+    background-color: yellow;
+}
+.spacing {
+    word-spacing: 30px;
+    letter-spacing: 10px;
+}
 /* footer */
 .footer {
     background-color: #222;
