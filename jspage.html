@@ -30,6 +30,55 @@
             </li>
         </ul>
     </div>
+    <div class="js container">
+        <div>
+            <span class="jsfunc">document.querySelector(`.class/#id/tag`)</span> - HTML dagi istalgan elementni JavaScript da tanlaydi
+        </div>
+        <div class="code">
+            let title = document.querySelector('#title');
+            <br>
+            let button = document.querySelector('.btn');
+        </div>
+        <hr class="line">
+        <div>
+            <span class="jsfunc">addEventListener()</span> - tanlangan elementda biror hodisa ro'y berganda, biror ishni bajaradi
+        </div>
+        <div class="code">
+            button.addEventListener('click', () = > {
+                console.log('welcome');
+            });
+        </div>
+        <hr class="line">
+        <div>
+            <span class="jsfunc">element.classList.add('class')</span> - elementga class qo'shadi
+        </div>
+        <div>
+            <span class="jsfunc">element.classList.remove('class')</span> - elementdan class ni o'chiradi
+        </div>
+        <div>
+            <span class="jsfunc">element.classList.contains('class')</span> - elementda ma'lum class borligini tekshiradi, bor bo'lsa true qaytaradi
+        </div>
+        <div class="code">
+<pre>
+const btn = document.querySelector('.btn1');
+const image = document.querySelector('.image');
+
+btn.addEventListener('click', () => {
+    if(image.classList.contains('changeimage')){
+        image.classList.remove('changeimage');
+    } else {
+        image.classList.add('changeimage');
+    }
+});
+</pre>
+        </div>
+        <div>Yuqoridagi kod knopka bosilganda rasm ning changeimage nomli class i bor yoki yo'qligini tekshiradi, agar chabgeimage class i bor bo'lsa changeimage class ini o'chiradi, yo'q bo'lsa qo'shadi </div>
+        <div class="demo">
+            <button class="button">Knopka</button>
+            <br>
+            <img class="image" src="img/photo.jpg" alt="photo">
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer__div">
             <a class="footer__link youtube__link" href="https://www.youtube.com/@chingizpro" target="_blank">Frontend dasturlash bo'yicha videolar</a>

@@ -70,7 +70,7 @@ input, button, textarea, select {
     text-align: center;
     margin-bottom: 21px;
 }
-.tag, .attr, .attrval, .prop, .val, .code {
+.tag, .attr, .attrval, .prop, .val, .code, .jsfunc {
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -79,6 +79,9 @@ input, button, textarea, select {
 .tag {
     color: green;
     text-shadow: 1px 0 black;
+}
+.jsfunc {
+    color: dodgerblue;
 }
 .code {
     color: lime;
@@ -278,6 +281,21 @@ input, button, textarea, select {
     padding: 15px;
     font-size: 24px;
     box-shadow: 0 0 15px 3px black, 10px 12px blue, -7px -5px 8px red;
+}
+/* jspage */
+.demo {
+    border: 2px solid tomato;
+    padding: 25px;
+}
+.image {
+    width: 300px;
+    border: 5px solid transparent;
+}
+.changeimage {
+    border-radius: 20px;
+    box-shadow: 0 0 20px 2px black;
+    scale: 0.8;
+    border-color: red;
 }
 /* footer */
 .footer {

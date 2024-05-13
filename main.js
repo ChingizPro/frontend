@@ -16,3 +16,15 @@ btn.addEventListener('click', () => {
         list.removeEventListener('animationend', removeclass);
     }
 });
+
+// demo
+const button = document.querySelector('.button');
+const image = document.querySelector('.image');
+
+button.addEventListener('click', () => {
+    if(image.classList.contains('changeimage')){
+        image.classList.remove('changeimage');
+    } else {
+        image.classList.add('changeimage');
+    }
+});
