@@ -18,13 +18,26 @@ btn.addEventListener('click', () => {
 });
 
 // demo
-const button = document.querySelector('.button');
-const image = document.querySelector('.image');
+if(location.href.match('jspage.html')){
+    const button = document.querySelector('.button');
+    const image = document.querySelector('.image');
+    
+    button.addEventListener('click', () => {
+        if(image.classList.contains('changeimage')){
+            image.classList.remove('changeimage');
+        } else {
+            image.classList.add('changeimage');
+        }
+    });
+}
 
-button.addEventListener('click', () => {
-    if(image.classList.contains('changeimage')){
-        image.classList.remove('changeimage');
-    } else {
-        image.classList.add('changeimage');
+// copy code to clipboard
+let container = document.querySelector('.container');
+
+container.addEventListener('click', (evt) => {
+    if(evt.target.matches('.code') || evt.target.matches('.code *')){
+        navigator.clipboard.writeText(evt.target.textContent.trim());
+        evt.target.classList.add('copied');
+        setTimeout(() => {evt.target.classList.remove('copied')}, 1000)
     }
 });

@@ -85,10 +85,27 @@ input, button, textarea, select {
 }
 .code {
     color: lime;
-    padding: 7px;
+    padding: 12px;
     margin: 7px 0;
     background-color: black;
     overflow: auto;
+    position: relative;
+    cursor: copy;
+    transition: 0.1s scale linear;
+}
+.code::after {
+    position: absolute;
+    content: 'copy';
+    right: 10px;
+    top: 5px;
+    font-size: 17px;
+    color: silver;
+}
+.code:active::after {
+    translate: 0 2px;
+}
+.copied::after {
+    content: 'copied';
 }
 .code > * {
     font-weight: normal;
