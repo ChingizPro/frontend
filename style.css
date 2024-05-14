@@ -93,6 +93,9 @@ input, button, textarea, select {
     cursor: copy;
     transition: 0.1s scale linear;
 }
+span.code, .inline.code {
+    padding-right: 80px;
+}
 .code::after {
     position: absolute;
     content: 'copy';

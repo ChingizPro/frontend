@@ -25,8 +25,10 @@ if(location.href.match('jspage.html')){
     button.addEventListener('click', () => {
         if(image.classList.contains('changeimage')){
             image.classList.remove('changeimage');
+            button.textContent = 'Tugmani bosing';
         } else {
             image.classList.add('changeimage');
+            button.textContent = 'Yana bosing';
         }
     });
 }
